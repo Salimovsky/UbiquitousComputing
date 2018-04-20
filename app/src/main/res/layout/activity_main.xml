@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/steps_counter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="@dimen/paddingLarge"
+        android:lines="1"
+        android:text="@string/accelerometer_count_text" />
+
+    <TextView
+        android:id="@+id/steps_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="@dimen/paddingLarge"
+        android:layout_toRightOf="@id/steps_counter_label"
+        android:gravity="top|left"
+        android:lines="10"
+        android:translationZ="10dp" />
+
+    <TextView
+        android:id="@+id/step_detector_sensor_steps_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/steps_counter_label"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/paddingLarge"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/step_detector_text" />
+
+    <TextView
+        android:id="@+id/step_counter_sensor_steps_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step_detector_sensor_steps_counter"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/paddingLarge"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/step_counter_sensor_text" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons"
+        android:layout_below="@id/step_counter_sensor_steps_counter" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/launch_recorder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="@dimen/paddingSmall"
+            android:background="@drawable/round_corner_red_button"
+            android:padding="@dimen/paddingSmall"
+            android:text="@string/record"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/replay_recording"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_margin="@dimen/paddingSmall"
+            android:background="@drawable/round_corner_blue_grey_selector"
+            android:padding="@dimen/paddingSmall"
+            android:text="@string/replay_offline_activity"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="darkBlue">#003B64</color>
+    <color name="lightBlue">#0073BD</color>
+    <color name="actionBlue">#2F77CD</color>
+    <color name="trench">#EEEEEE</color>
+    <color name="dark">#231f20</color>
+    <color name="statusBlue">#042B48</color>
+
+    <color name="dividerGray">#DBDCDC</color>
+    <color name="orange">#E37222</color>
+    <color name="snackbar">#A9E0EA</color>
+    <color name="highlighter">#E5F6F9</color>
+    <color name="utilityGray">#F1F2F2</color>
+    <color name="alertRed">#BB0628</color>
+
+    <color name="halfTransparentWhite">#7fffffff</color>
+    <color name="darkGray">#474747</color>
+    <color name="mediumGray">#737474</color>
+    <color name="lightGray">#A7A8AA</color>
+    <color name="liveGray">#C8C9C7</color>
+
+    <!--Not part of palette -->
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="blackOpaque50">#88000000</color>
+    <color name="firstBlue">#3689D4</color>
+
+</resources>

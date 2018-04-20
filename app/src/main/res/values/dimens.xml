@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margins & Padding -->
+    <dimen name="paddingXXXXLarge">48dp</dimen>
+    <dimen name="paddingXXXLarge">32dp</dimen>
+    <dimen name="paddingXXLarge">24dp</dimen>
+    <dimen name="paddingXLarge">16dp</dimen>
+    <dimen name="paddingLarge">12dp</dimen>
+    <dimen name="paddingMedium">8dp</dimen>
+    <dimen name="paddingXMedium">6dp</dimen>
+    <dimen name="paddingSmall">4dp</dimen>
+    <dimen name="paddingXSmall">2dp</dimen>
+    <dimen name="paddingXXSmall">1dp</dimen>
+
+    <!-- Font Ramp -->
+    <dimen name="fontXXXLarge">36sp</dimen>
+    <dimen name="fontXXLarge">24sp</dimen>
+    <dimen name="fontXLarge">20sp</dimen>
+    <dimen name="fontLarge">16sp</dimen>
+    <dimen name="fontMedium">14sp</dimen>
+    <dimen name="fontSmall">12sp</dimen>
+    <dimen name="fontTiny">11sp</dimen>
+</resources>
