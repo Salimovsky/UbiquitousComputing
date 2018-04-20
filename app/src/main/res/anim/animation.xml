@@ -3,8 +3,8 @@
     android:shareInterpolator="false">
     <scale
         android:duration="1000"
-        android:fromXScale="15.0"
-        android:fromYScale="15.0"
+        android:fromXScale="10.0"
+        android:fromYScale="10.0"
         android:toXScale="1.0"
         android:toYScale="1.0" />
 </set>

@@ -17,6 +17,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.addi.salim.ubiquouscomputing1.view.MagicWheelWidget;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -34,6 +35,7 @@ public class AccelerometerActivity extends AppCompatActivity {
     private TextView accelerometerCounterView;
     private TextView stepDetectorSensorView;
     private TextView stepCounterSensorView;
+    private MagicWheelWidget magicWheelWidget;
 
     private LineGraphSeries<DataPoint> serieX;
     private LineGraphSeries<DataPoint> serieY;
@@ -113,7 +115,7 @@ public class AccelerometerActivity extends AppCompatActivity {
             if (walkingXSignalPeekDetector.addAndDetectPeak(timestamp, filteredSignal[0])) {
                 accelerometerStepsCounter++;
                 playBeep();
-                animateStepsCounterText();
+                playAnimation();
             }
 
             updateStepCountersUI();
@@ -133,10 +135,11 @@ public class AccelerometerActivity extends AppCompatActivity {
         }
     }
 
-    private void animateStepsCounterText() {
+    private void playAnimation() {
         animation.reset();
         accelerometerCounterView.clearAnimation();
         accelerometerCounterView.startAnimation(animation);
+        magicWheelWidget.start();
     }
 
     @Override
@@ -160,6 +163,7 @@ public class AccelerometerActivity extends AppCompatActivity {
         stepCounterSensorView = findViewById(R.id.step_counter_sensor_steps_counter);
         launchRecorderButton = findViewById(R.id.launch_recorder);
         replayRecordingButton = findViewById(R.id.replay_recording);
+        magicWheelWidget = findViewById(R.id.magic_wheel);
         launchRecorderButton.setActivated(false);
 
         hideDebugMode();

@@ -12,7 +12,7 @@ public class WalkingSignalPeekDetector {
     private final double[] signalPoints = new double[30];
     private long lastSignalPointTimestamp;
     private long lastUpPeekTimestamp;
-    private final static double VARIATION_MIN_THRESHOLD = 0.5d;
+    private final static double VARIATION_MIN_THRESHOLD = 0.8d;
     private final static double VARIATION_MAX_THRESHOLD = 2.5d;
 
 

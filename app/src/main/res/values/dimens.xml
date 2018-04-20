@@ -20,4 +20,11 @@
     <dimen name="fontMedium">14sp</dimen>
     <dimen name="fontSmall">12sp</dimen>
     <dimen name="fontTiny">11sp</dimen>
+
+    <dimen name="animation_layout_dimen">160dp</dimen>
+    <dimen name="small_wheel_image_dimen">90dp</dimen>
+    <dimen name="large_wheel_image_dimen">110dp</dimen>
+    <dimen name="cog_wheel_margin_top">47dp</dimen>
+    <dimen name="cog_wheel_margin_left">50dp</dimen>
+    <dimen name="progress_wheel_layout_margin_top">80dp</dimen>
 </resources>

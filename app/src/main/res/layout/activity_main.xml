@@ -23,6 +23,15 @@
         android:lines="10"
         android:translationZ="10dp" />
 
+    <com.addi.salim.ubiquouscomputing1.view.MagicWheelWidget
+        android:id="@+id/magic_wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/steps_counter"
+        android:layout_alignLeft="@id/steps_counter"
+        android:layout_marginBottom="-24dp"
+        android:layout_marginLeft="-16dp" />
+
     <TextView
         android:id="@+id/step_detector_sensor_steps_counter"
         android:layout_width="wrap_content"

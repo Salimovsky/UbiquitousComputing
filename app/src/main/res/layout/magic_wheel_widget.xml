@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/animation_layout_dimen"
+    android:layout_height="@dimen/animation_layout_dimen">
+
+    <ImageView
+        android:id="@+id/cog_wheel_small"
+        android:layout_width="@dimen/small_wheel_image_dimen"
+        android:layout_height="@dimen/small_wheel_image_dimen"
+        android:layout_marginStart="@dimen/paddingMedium"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:src="@drawable/cog_wheel" />
+
+    <ImageView
+        android:id="@+id/cog_wheel_large"
+        android:layout_width="@dimen/large_wheel_image_dimen"
+        android:layout_height="@dimen/large_wheel_image_dimen"
+        android:layout_marginStart="@dimen/cog_wheel_margin_left"
+        android:layout_marginTop="@dimen/cog_wheel_margin_top"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:rotation="25"
+        android:src="@drawable/cog_wheel" />
+</RelativeLayout>
